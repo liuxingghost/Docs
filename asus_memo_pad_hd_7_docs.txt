@@ -1,0 +1,16 @@
+教程：
+http://forum.xda-developers.com/showthread.php?t=2503668&nocache=1
+http://forum.xda-developers.com/showthread.php?t=2579887
+http://forum.xda-developers.com/showthread.php?t=2339895&page=30
+http://androidforums.com/memo-pad-hd-all-things-root/805826-guide-asus-memo-pad-hd7-us-backup-restore-unlock-recovery.html
+
+1. 有些人可能会卡在第一步，安装驱动，这里提示一下，MTK看来是插上USB那会会显示mtk_preloader，但过几秒就消失了，这也是后面刷机每次都要插拔线的原因，因为一旦没有数据传输会自动消失，只能重新插拔来连接VCOM端口，但是只要在没消失前点右键更新驱动，设备管理器不会刷新，就还能装驱动，当然直接用exe安装不存在这个问题。windows8用户可能会发现怎么都装不上驱动，因为win8默认不能安装未带签名的驱动，解决方案参考：http://www.photoboothtechnology.com/the-third-party-inf-does-not-contain-digital-signature-information/
+
+2. 刷机第一步，其实只是格式化而已，基本上3分钟就搞定了，没想象中复杂，很快的，注意不要选错目录；
+
+3. 不需要重启flasher，只要每步做完重新插拔线，至于什么时候拔线，早点晚点无所谓，不用担心；
+
+4. 格式化完成之后，也就是XDA教程里的PART1完成后，可以直接选WW版ROM下signed 
+bin文件夹下的配置文件（MT6589_Android_scatter_emmc），download后刷入WW版ROM
+
+5. 如果想同时保留第三方recovery和WW版ROM，可以先按照XDA教程全部做完，然后选择WW版ROM下signed bin文件夹下的配置文件，把下方preloader和recovery的勾去掉，其他勾上，download，这样既能保留第三方recovery（可未来刷ZIP包，也可备份为ZIP），又能刷WW版ROM
